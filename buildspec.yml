@@ -45,7 +45,7 @@ phases:
 
 artifacts:
   files:
-    - ./out.zip
+    - out/*
     # - location
   #name: $(date +%Y-%m-%d)
   #discard-paths: yes
