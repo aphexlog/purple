@@ -28,7 +28,7 @@ phases:
   build:
     commands:
       - npm i
-      - npx next build && npx next export
+      - npx next build && npx next export && zip -r out.zip out
   #post_build:
     #commands:
       # - command
