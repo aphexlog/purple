@@ -1,0 +1,10 @@
+{
+  "function": {
+    "potatohead86ccc938": {
+      "build": true,
+      "providerPlugin": "awscloudformation",
+      "service": "Lambda",
+      "dependsOn": []
+    }
+  }
+}
