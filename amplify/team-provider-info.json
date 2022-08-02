@@ -19,7 +19,7 @@
       "function": {
         "oops": {
           "deploymentBucketName": "amplify-amplify589d967944d84-staging-215541-deployment",
-          "s3Key": "amplify-builds/oops-37644b4a4357374b3066-build.zip"
+          "s3Key": "amplify-builds/oops-345746726578746e424a-build.zip"
         }
       }
     }

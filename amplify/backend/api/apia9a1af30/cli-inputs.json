@@ -5,13 +5,7 @@
       "name": "/oops",
       "lambdaFunction": "oops",
       "permissions": {
-        "setting": "private",
-        "auth": [
-          "create",
-          "read",
-          "update",
-          "delete"
-        ]
+        "setting": "open"
       }
     }
   }
