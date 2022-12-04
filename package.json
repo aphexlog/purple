@@ -1,22 +1,29 @@
 {
   "name": "potatohead",
   "version": "0.1.0",
-  "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "build-static": "next build && next export",
-    "clear": "rm -rf .next out* node_modules",
-    "start": "next start",
-    "lint": "next lint"
+  "bin": {
+    "potatohead": "bin/potatohead.js"
   },
-  "dependencies": {
-    "next": "12.2.3",
-    "react": "18.2.0",
-    "react-dom": "18.2.0"
+  "scripts": {
+    "build": "tsc",
+    "watch": "tsc -w",
+    "test": "jest",
+    "cdk": "cdk"
   },
   "devDependencies": {
-    "eslint": "8.20.0",
-    "eslint-config-next": "12.2.3"
+    "@types/babel__traverse": "7.18.2",
+    "@types/jest": "^27.5.2",
+    "@types/node": "10.17.27",
+    "@types/prettier": "2.6.0",
+    "jest": "^27.5.1",
+    "ts-jest": "^27.1.4",
+    "aws-cdk": "2.53.0",
+    "ts-node": "^10.9.1",
+    "typescript": "~3.9.7"
+  },
+  "dependencies": {
+    "aws-cdk-lib": "2.53.0",
+    "constructs": "^10.0.0",
+    "source-map-support": "^0.5.21"
   }
 }
