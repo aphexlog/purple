@@ -32,4 +32,4 @@ override.tf.json
 # Ignore CLI configuration files
 .terraformrc
 terraform.rc
-.terraformrc.lock.hcl # This file is used by Terraform CLI to store plugin download locations. It is safe to share across multiple team members or to commit to version control systems.
+.terraform.lock.hcl
