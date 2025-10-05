@@ -71,4 +71,16 @@ go.sum
 # Go test and buildcache directories
 _test/
 _build/
-cmd
+
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build outputs
+dist/
+build/
+
+# Database files
+*.db

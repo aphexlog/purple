@@ -1,7 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { SurveyProvider } from './contexts/SurveyContext';
-import Header from './components/Header';
+import Header from './components/SimpleHeader';
 import HomePage from './pages/SimpleHomePage';
 import CreateSurvey from './pages/CreateSurvey';
 import SurveyList from './pages/SurveyList';
