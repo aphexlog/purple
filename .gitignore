@@ -1,74 +1,80 @@
-# Local .terraform directories
-**/.terraform/*
+# Logs
+logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+lerna-debug.log*
 
-# .tfstate files
-*.tfstate
-*.tfstate.*
+# Runtime data
+pids
+*.pid
+*.seed
+*.pid.lock
 
-# Crash log files
-crash.log
-crash.*.log
+# Coverage directory used by tools like istanbul
+coverage
+*.lcov
 
-# Exclude all .tfvars files, which are likely to contain sensitive data, such as
-# password, private keys, and other secrets. These should not be part of version 
-# control as they are data points which are potentially sensitive and subject 
-# to change depending on the environment.
-*.tfvars
-*.tfvars.json
+# nyc test coverage
+.nyc_output
 
-# Ignore override files as they are usually used to override resources locally and so
-# are not checked in
-override.tf
-override.tf.json
-*_override.tf
-*_override.tf.json
+# Dependency directories
+node_modules/
 
-# Include override files you do wish to add to version control using negated pattern
-# !example_override.tf
+# Optional npm cache directory
+.npm
 
-# Include tfplan files to ignore the plan output of command: terraform plan -out=tfplan
-# example: *tfplan*
+# Optional REPL history
+.node_repl_history
 
-# Ignore CLI configuration files
-.terraformrc
-terraform.rc
-.terraform.lock.hcl
-dist
-.terraform
-.aider*
+# Output of 'npm pack'
+*.tgz
 
-# Golang specific entries
-# Binaries for programs and plugins
-*.exe
-*.exe~
-*.dll
-*.so
-*.dylib
+# Yarn Integrity file
+.yarn-integrity
 
-# Test binary, built with `go test`
-*.test
+# dotenv environment variables file
+.env
+.env.test
 
-# Output of the go coverage tool, specifically when used with LiteIDE
-*.out
+# parcel-bundler cache (https://parceljs.org/)
+.cache
+.parcel-cache
 
-# Dependency directories (remove the next line if you use go modules)
-Godeps/_workspace/
-vendor/
+# Build outputs
+dist/
+build/
 
-# Go build cache
-**/pkg-mod/
+# Editor directories and files
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
 
-# Go workspace file
-go.sum
+# OS generated files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
 
-# Go mobile artifacts
-*.a
-*.o
-*.class
-*.aar
-*.framework
+# Temporary files
+tmp/
+temp/
 
-# Go test and buildcache directories
-_test/
-_build/
-cmd
+# Node.js dependencies
+node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Build outputs
+dist/
+build/
+
+# Database files
+*.db
