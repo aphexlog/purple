@@ -59,6 +59,7 @@ const SurveyResults: React.FC = () => {
     };
 
     fetchData();
+    // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [id]);
 
   const getAnswerSummary = (question: any): AnswerSummary => {

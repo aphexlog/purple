@@ -14,7 +14,7 @@ const SurveyList: React.FC = () => {
 
   useEffect(() => {
     fetchSurveys();
-  }, []);
+  }, [fetchSurveys]);
 
   const handleDelete = async (id: string, title: string) => {
     if (window.confirm(`Are you sure you want to delete "${title}"?`)) {

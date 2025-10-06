@@ -11,7 +11,7 @@ const SurveyView: React.FC = () => {
     if (id) {
       fetchSurvey(id);
     }
-  }, [id]);
+  }, [id, fetchSurvey]);
 
   const handlePublishToggle = async () => {
     if (!currentSurvey || !id) return;
