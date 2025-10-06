@@ -213,12 +213,8 @@ const SurveyResponse: React.FC = () => {
   if (submitted) {
     return (
       <div className="max-w-2xl mx-auto text-center py-12">
-        <div className={`rounded-2xl p-8 ${
-          survey.type === 'fun' 
-            ? 'bg-gradient-to-br from-pink-50 to-purple-50' 
-            : 'bg-gray-50'
-        }`}>
-          <div className="text-6xl mb-4">{survey.type === 'fun' ? '🎉' : '✓'}</div>
+        <div className="rounded-2xl p-8 bg-gradient-to-br from-green-50 to-blue-50">
+          <div className="text-6xl mb-4">✅</div>
           <h2 className="text-2xl font-bold text-gray-900 mb-4">
             {survey.settings?.thankYouMessage || 'Thank you for your response!'}
           </h2>
@@ -232,11 +228,7 @@ const SurveyResponse: React.FC = () => {
 
   return (
     <div className="max-w-2xl mx-auto">
-      <div className={`rounded-2xl p-8 shadow-sm border border-gray-100 ${
-        survey.type === 'fun' 
-          ? 'bg-gradient-to-br from-pink-50 to-purple-50' 
-          : 'bg-white'
-      }`}>
+      <div className="rounded-2xl p-8 shadow-sm border border-gray-100 bg-white">
         <div className="text-center mb-8">
           <h1 className="text-3xl font-bold text-gray-900 mb-4">{survey.title}</h1>
           {survey.description && (

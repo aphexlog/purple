@@ -15,7 +15,6 @@ export interface Survey {
   id: string;
   title: string;
   description?: string;
-  type: 'fun' | 'serious';
   questions: Question[];
   settings: {
     allowMultipleResponses?: boolean;

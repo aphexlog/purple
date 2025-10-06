@@ -20,7 +20,7 @@ function initializeTables() {
     id TEXT PRIMARY KEY,
     title TEXT NOT NULL,
     description TEXT,
-    type TEXT NOT NULL DEFAULT 'fun',
+
     questions TEXT NOT NULL,
     settings TEXT,
     created_at DATETIME DEFAULT CURRENT_TIMESTAMP,

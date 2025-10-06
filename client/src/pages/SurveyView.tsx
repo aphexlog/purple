@@ -117,7 +117,7 @@ const SurveyView: React.FC = () => {
         <div className="mt-8 flex items-center justify-between pt-6 border-t border-gray-200">
           <div className="text-sm text-gray-500">
             <p>Created: {new Date(currentSurvey.created_at).toLocaleDateString()}</p>
-            <p>Type: {currentSurvey.type}</p>
+            <p>Questions: {currentSurvey.questions.length}</p>
           </div>
           <div className="flex space-x-4">
             <Link

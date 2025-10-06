@@ -13,7 +13,7 @@ const HomePage: React.FC = () => {
   const features = [
     {
       icon: <SparklesIcon className="w-8 h-8" />,
-      title: 'Fun & Engaging Surveys',
+      title: 'Flexible Survey Creation',
       description: 'Create entertaining surveys, quizzes, and polls that people actually want to complete.',
       color: 'from-pink-500 to-purple-600'
     },
@@ -46,9 +46,9 @@ const HomePage: React.FC = () => {
             Create Surveys That Matter
           </h1>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-            Build engaging surveys for fun or serious data collection. 
+            Build any type of survey you need. 
             Purple Survey makes it easy to create, share, and analyze responses 
-            with our modern Electronic Data Capture platform.
+            with our modern survey platform.
           </p>
         </div>
 

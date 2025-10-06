@@ -17,7 +17,7 @@ const Header: React.FC = () => {
             </div>
             <div>
               <h1 className="text-xl font-bold text-gray-900">Purple Survey</h1>
-              <p className="text-xs text-gray-500">Electronic Data Capture</p>
+              <p className="text-xs text-gray-500">Survey Builder</p>
             </div>
           </Link>
 

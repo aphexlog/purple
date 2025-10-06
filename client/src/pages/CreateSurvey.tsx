@@ -6,8 +6,6 @@ import { Question } from '../types/survey';
 import { 
   PlusIcon, 
   TrashIcon, 
-  SparklesIcon, 
-  AcademicCapIcon,
   ArrowLeftIcon,
   ClipboardDocumentListIcon
 } from '@heroicons/react/24/outline';
@@ -18,7 +16,6 @@ const CreateSurvey: React.FC = () => {
   
   const [title, setTitle] = useState('');
   const [description, setDescription] = useState('');
-  const [type, setType] = useState<'fun' | 'serious'>('fun');
   const [questions, setQuestions] = useState<Question[]>([]);
 
 
@@ -87,15 +84,12 @@ const CreateSurvey: React.FC = () => {
       const survey = await createSurvey({
         title: title.trim(),
         description: description.trim() || undefined,
-        type,
         questions: questions.filter(q => q.question.trim()),
         settings: {
-          allowMultipleResponses: type === 'fun',
+          allowMultipleResponses: true,
           showProgressBar: true,
-          theme: type === 'fun' ? 'colorful' : 'professional',
-          thankYouMessage: type === 'fun' 
-            ? 'Thanks for taking our survey! 🎉' 
-            : 'Thank you for your participation.',
+          theme: 'modern',
+          thankYouMessage: 'Thank you for your response!',
         },
       });
       
@@ -160,40 +154,7 @@ const CreateSurvey: React.FC = () => {
               />
             </div>
 
-            <div>
-              <label className="block text-sm font-medium text-gray-700 mb-3">
-                Survey Type
-              </label>
-              <div className="grid grid-cols-2 gap-4">
-                <button
-                  type="button"
-                  onClick={() => setType('fun')}
-                  className={`p-4 rounded-xl border-2 transition-all ${
-                    type === 'fun'
-                      ? 'border-pink-500 bg-pink-50 text-pink-700'
-                      : 'border-gray-200 hover:border-pink-300'
-                  }`}
-                >
-                  <SparklesIcon className="w-6 h-6 mx-auto mb-2" />
-                  <div className="font-medium">Fun Survey</div>
-                  <div className="text-sm text-gray-500">Engaging & entertaining</div>
-                </button>
-                
-                <button
-                  type="button"
-                  onClick={() => setType('serious')}
-                  className={`p-4 rounded-xl border-2 transition-all ${
-                    type === 'serious'
-                      ? 'border-blue-500 bg-blue-50 text-blue-700'
-                      : 'border-gray-200 hover:border-blue-300'
-                  }`}
-                >
-                  <AcademicCapIcon className="w-6 h-6 mx-auto mb-2" />
-                  <div className="font-medium">Serious Survey</div>
-                  <div className="text-sm text-gray-500">Professional & formal</div>
-                </button>
-              </div>
-            </div>
+
           </div>
         </div>
 

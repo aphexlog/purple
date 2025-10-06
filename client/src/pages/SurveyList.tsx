@@ -6,9 +6,7 @@ import {
   EyeIcon, 
   ShareIcon, 
   TrashIcon,
-  ClipboardDocumentListIcon,
-  SparklesIcon,
-  AcademicCapIcon
+  ClipboardDocumentListIcon
 } from '@heroicons/react/24/outline';
 
 const SurveyList: React.FC = () => {
@@ -98,19 +96,10 @@ const SurveyList: React.FC = () => {
               key={survey.id}
               className="bg-white rounded-2xl p-6 shadow-sm border border-gray-100 hover:shadow-lg transition-shadow duration-300"
             >
-              {/* Survey Type Badge */}
+              {/* Survey Status */}
               <div className="flex items-center justify-between mb-4">
-                <div className={`inline-flex items-center px-3 py-1 rounded-full text-xs font-medium ${
-                  survey.type === 'fun'
-                    ? 'bg-pink-100 text-pink-700'
-                    : 'bg-blue-100 text-blue-700'
-                }`}>
-                  {survey.type === 'fun' ? (
-                    <SparklesIcon className="w-3 h-3 mr-1" />
-                  ) : (
-                    <AcademicCapIcon className="w-3 h-3 mr-1" />
-                  )}
-                  {survey.type === 'fun' ? 'Fun Survey' : 'Serious Survey'}
+                <div className="inline-flex items-center px-3 py-1 rounded-full text-xs font-medium bg-purple-100 text-purple-700">
+                  📋 Survey
                 </div>
                 
                 <div className={`px-2 py-1 rounded text-xs font-medium ${

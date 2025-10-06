@@ -1,10 +1,10 @@
 # Purple Survey App
 
-**Purple Survey** is a modern Electronic Data Capture (EDC) web application for creating, managing, and sharing surveys online. Built with React and Node.js, it provides a tech-forward, user-friendly platform for both fun and serious data collection.
+**Purple Survey** is a modern web application for creating, managing, and sharing surveys online. Built with React and Node.js, it provides a tech-forward, user-friendly platform for any kind of data collection.
 
 ## 🎯 Features
 
-- **Dual Survey Modes**: Create both entertaining and professional surveys
+- **Flexible Survey Creation**: Create any type of survey you can imagine
 - **Real-time Analytics**: View responses and insights as they come in  
 - **Easy Sharing**: Share surveys via simple links - no registration required for respondents
 - **Multiple Question Types**: Text, multiple choice, ratings, dates, and more
@@ -42,21 +42,20 @@
 4. **Open your browser**
    Navigate to `http://localhost:3000` to start creating surveys!
 
-## 📊 Survey Types
+## 📊 Survey Capabilities
 
-### Fun Surveys
-Perfect for personality quizzes, entertainment, and engaging content:
-- Colorful themes and animations
-- Social sharing features  
-- Gamification elements
-- Playful result presentations
+Create surveys for any purpose:
+- **Personal**: Personality quizzes, polls for friends, event planning
+- **Professional**: Customer feedback, employee surveys, market research  
+- **Educational**: Assessments, course evaluations, research studies
+- **Creative**: Interactive storytelling, preference gathering, community polls
 
-### Serious Surveys
-Designed for research, feedback collection, and professional data gathering:
-- Clean, distraction-free interface
-- Advanced validation rules
-- Professional styling
-- Export capabilities
+Key capabilities:
+- Multiple question types with validation
+- Customizable themes and styling
+- Real-time response collection
+- Analytics and insights
+- Easy sharing and collaboration
 
 ## 🛠 Development
 
@@ -98,11 +97,11 @@ purple/
 
 ## 🎨 Tech Stack
 
-- **Frontend**: React 18, TypeScript, Tailwind CSS, Heroicons
+- **Frontend**: React 18, TypeScript, Custom CSS
 - **Backend**: Node.js, Express.js, SQLite
 - **State Management**: React Context API
 - **Routing**: React Router
-- **Styling**: Tailwind CSS with custom gradients
+- **Styling**: Custom CSS with modern gradients
 - **Database**: SQLite (easily upgradeable to PostgreSQL)
 
 ## 🔧 Configuration
@@ -134,5 +133,5 @@ MIT — use it, hack it, share it.
 
 ---
 
-*Built with ❤️ for modern data collection needs.*
+*Built with ❤️ for modern survey needs.*
 

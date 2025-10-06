@@ -1,7 +1,7 @@
 {
   "name": "purple-survey-app",
   "version": "1.0.0",
-  "description": "A modern Electronic Data Capture (EDC) web application for creating and sharing surveys",
+  "description": "A modern web application for creating and sharing surveys",
   "main": "server/index.js",
   "scripts": {
     "dev": "concurrently \"npm run server:dev\" \"npm run client:dev\"",
@@ -13,8 +13,7 @@
   },
   "keywords": [
     "survey",
-    "edc",
-    "electronic-data-capture",
+    "data-collection",
     "web-app",
     "forms"
   ],

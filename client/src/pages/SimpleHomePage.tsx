@@ -10,7 +10,7 @@ const SimpleHomePage: React.FC = () => {
           Create Surveys That Matter
         </h1>
         <p className="text-xl text-gray-600 mb-8" style={{maxWidth: '600px', margin: '0 auto', lineHeight: '1.6'}}>
-          Build engaging surveys for fun or serious data collection. 
+          Build any type of survey you need. 
           Purple Survey makes it easy to create, share, and analyze responses.
         </p>
 
@@ -47,25 +47,25 @@ const SimpleHomePage: React.FC = () => {
             Everything you need for effective surveys
           </h2>
           <p className="text-gray-600" style={{maxWidth: '500px', margin: '0 auto'}}>
-            Whether you're creating a fun personality quiz or conducting serious research, 
+            Whether you're creating polls, quizzes, feedback forms, or research surveys, 
             our platform has the tools you need.
           </p>
         </div>
 
         <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
           <div className="card text-center">
-            <div style={{fontSize: '2rem', marginBottom: '12px'}}>✨</div>
-            <h3 className="font-semibold text-gray-900 mb-2">Fun & Engaging</h3>
+            <div style={{fontSize: '2rem', marginBottom: '12px'}}>📝</div>
+            <h3 className="font-semibold text-gray-900 mb-2">Multiple Question Types</h3>
             <p className="text-gray-600" style={{fontSize: '14px'}}>
-              Create entertaining surveys and quizzes that people love to complete.
+              Text, multiple choice, ratings, dates, and more question formats.
             </p>
           </div>
 
           <div className="card text-center">
-            <div style={{fontSize: '2rem', marginBottom: '12px'}}>🎓</div>
-            <h3 className="font-semibold text-gray-900 mb-2">Serious Data</h3>
+            <div style={{fontSize: '2rem', marginBottom: '12px'}}>🎨</div>
+            <h3 className="font-semibold text-gray-900 mb-2">Customizable</h3>
             <p className="text-gray-600" style={{fontSize: '14px'}}>
-              Professional tools for research and formal data gathering.
+              Tailor your surveys to match your needs and brand.
             </p>
           </div>
 
@@ -87,46 +87,48 @@ const SimpleHomePage: React.FC = () => {
         </div>
       </section>
 
-      {/* Survey Types */}
+      {/* Survey Examples */}
       <section className="card" style={{marginTop: '3rem'}}>
         <div className="text-center mb-8">
           <h2 className="text-2xl font-bold text-gray-900 mb-4">
-            Two Survey Modes
+            Perfect for Any Use Case
           </h2>
           <p className="text-gray-600">
-            Choose the perfect mode for your survey based on your goals and audience.
+            Create surveys for any purpose - from simple polls to comprehensive research.
           </p>
         </div>
 
         <div className="grid md:grid-cols-2 gap-6">
-          <div className="text-center space-y-4" style={{padding: '24px', background: '#fef3f2', borderRadius: '12px', border: '1px solid #f3e8ff'}}>
-            <div style={{fontSize: '3rem'}}>✨</div>
-            <h3 className="text-xl font-bold text-gray-900">Fun Mode</h3>
-            <p className="text-gray-600">
-              Perfect for personality quizzes, entertainment surveys, and engaging content. 
-              Includes playful themes and shareable results.
+          <div className="text-center space-y-4" style={{padding: '24px', background: '#f8fafc', borderRadius: '12px', border: '1px solid #e2e8f0'}}>
+            <div style={{fontSize: '2.5rem'}}>🗳️</div>
+            <h3 className="text-lg font-bold text-gray-900">Polls & Feedback</h3>
+            <p className="text-gray-600" style={{fontSize: '14px'}}>
+              Quick polls, event planning, team feedback, customer satisfaction surveys
             </p>
-            <ul style={{textAlign: 'left', fontSize: '14px', color: '#6b7280', listStyle: 'none', padding: 0}}>
-              <li>• Colorful themes and animations</li>
-              <li>• Social sharing features</li>
-              <li>• Gamification elements</li>
-              <li>• Result personalization</li>
-            </ul>
           </div>
 
-          <div className="text-center space-y-4" style={{padding: '24px', background: '#eff6ff', borderRadius: '12px', border: '1px solid #dbeafe'}}>
-            <div style={{fontSize: '3rem'}}>🎓</div>
-            <h3 className="text-xl font-bold text-gray-900">Serious Mode</h3>
-            <p className="text-gray-600">
-              Designed for research, feedback collection, and professional data gathering. 
-              Clean, distraction-free interface focused on data quality.
+          <div className="text-center space-y-4" style={{padding: '24px', background: '#f8fafc', borderRadius: '12px', border: '1px solid #e2e8f0'}}>
+            <div style={{fontSize: '2.5rem'}}>🧠</div>
+            <h3 className="text-lg font-bold text-gray-900">Quizzes & Assessments</h3>
+            <p className="text-gray-600" style={{fontSize: '14px'}}>
+              Personality tests, knowledge quizzes, skills assessments, educational surveys
             </p>
-            <ul style={{textAlign: 'left', fontSize: '14px', color: '#6b7280', listStyle: 'none', padding: 0}}>
-              <li>• Professional, clean design</li>
-              <li>• Advanced validation rules</li>
-              <li>• Export capabilities</li>
-              <li>• Privacy controls</li>
-            </ul>
+          </div>
+
+          <div className="text-center space-y-4" style={{padding: '24px', background: '#f8fafc', borderRadius: '12px', border: '1px solid #e2e8f0'}}>
+            <div style={{fontSize: '2.5rem'}}>📊</div>
+            <h3 className="text-lg font-bold text-gray-900">Market Research</h3>
+            <p className="text-gray-600" style={{fontSize: '14px'}}>
+              Product feedback, user research, market analysis, demographic studies
+            </p>
+          </div>
+
+          <div className="text-center space-y-4" style={{padding: '24px', background: '#f8fafc', borderRadius: '12px', border: '1px solid #e2e8f0'}}>
+            <div style={{fontSize: '2.5rem'}}>🎯</div>
+            <h3 className="text-lg font-bold text-gray-900">Custom Surveys</h3>
+            <p className="text-gray-600" style={{fontSize: '14px'}}>
+              Registration forms, applications, evaluations - build exactly what you need
+            </p>
           </div>
         </div>
       </section>

@@ -64,7 +64,7 @@ router.get('/:id', (req, res) => {
 
 // Create new survey
 router.post('/', (req, res) => {
-  const { title, description, type = 'fun', questions, settings = {}, creator_info } = req.body;
+  const { title, description, questions, settings = {}, creator_info } = req.body;
   
   if (!title || !questions || !Array.isArray(questions) || questions.length === 0) {
     res.status(400).json({ error: 'Title and at least one question are required' });
@@ -74,14 +74,13 @@ router.post('/', (req, res) => {
   const id = uuidv4();
   const created_at = new Date().toISOString();
   
-  const sql = `INSERT INTO surveys (id, title, description, type, questions, settings, creator_info, created_at, updated_at)
-               VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)`;
+  const sql = `INSERT INTO surveys (id, title, description, questions, settings, creator_info, created_at, updated_at)
+               VALUES (?, ?, ?, ?, ?, ?, ?, ?)`;
   
   const params = [
     id,
     title,
     description,
-    type,
     JSON.stringify(questions),
     JSON.stringify(settings),
     creator_info ? JSON.stringify(creator_info) : null,
@@ -99,7 +98,6 @@ router.post('/', (req, res) => {
       id,
       title,
       description,
-      type,
       questions,
       settings,
       creator_info,
@@ -113,18 +111,17 @@ router.post('/', (req, res) => {
 // Update survey
 router.put('/:id', (req, res) => {
   const { id } = req.params;
-  const { title, description, type, questions, settings } = req.body;
+  const { title, description, questions, settings } = req.body;
   
   const updated_at = new Date().toISOString();
   
   const sql = `UPDATE surveys 
-               SET title = ?, description = ?, type = ?, questions = ?, settings = ?, updated_at = ?
+               SET title = ?, description = ?, questions = ?, settings = ?, updated_at = ?
                WHERE id = ?`;
   
   const params = [
     title,
     description,
-    type,
     JSON.stringify(questions),
     JSON.stringify(settings || {}),
     updated_at,

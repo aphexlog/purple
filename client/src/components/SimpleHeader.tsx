@@ -33,7 +33,7 @@ const SimpleHeader: React.FC = () => {
                 Purple Survey
               </h1>
               <p style={{margin: 0, fontSize: '12px', color: '#6b7280'}}>
-                Electronic Data Capture
+                Survey Builder
               </p>
             </div>
           </Link>
