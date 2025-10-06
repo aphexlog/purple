@@ -15,6 +15,12 @@ interface Analytics {
   daily_responses: Array<{ date: string; count: number; }>;
 }
 
+type AnswerSummary = 
+  | { type: 'empty'; data: [] }
+  | { type: 'options'; data: Array<{ option: string; count: number; percentage: string }> }
+  | { type: 'rating'; data: { average: string; distribution: Array<{ rating: number; count: number }> } }
+  | { type: 'text'; data: any[] };
+
 const SurveyResults: React.FC = () => {
   const { id } = useParams<{ id: string }>();
   const [survey, setSurvey] = useState<any>(null);
@@ -23,7 +29,7 @@ const SurveyResults: React.FC = () => {
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState<string | null>(null);
 
-  const API_BASE = process.env.NODE_ENV === 'production' ? '' : 'http://localhost:5000';
+  const API_BASE = process.env.NODE_ENV === 'production' ? '' : 'http://localhost:5001';
 
   useEffect(() => {
     const fetchData = async () => {
@@ -55,7 +61,7 @@ const SurveyResults: React.FC = () => {
     fetchData();
   }, [id]);
 
-  const getAnswerSummary = (question: any) => {
+  const getAnswerSummary = (question: any): AnswerSummary => {
     const answers = responses.map(r => r.responses[question.id]).filter(Boolean);
     
     if (answers.length === 0) return { type: 'empty' as const, data: [] };

@@ -11,7 +11,7 @@ const SurveyResponse: React.FC = () => {
   const [submitted, setSubmitted] = useState(false);
   const [error, setError] = useState<string | null>(null);
 
-  const API_BASE = process.env.NODE_ENV === 'production' ? '' : 'http://localhost:5000';
+  const API_BASE = process.env.NODE_ENV === 'production' ? '' : 'http://localhost:5001';
 
   useEffect(() => {
     const fetchSurvey = async () => {

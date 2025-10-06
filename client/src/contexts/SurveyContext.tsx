@@ -70,7 +70,7 @@ const SurveyContext = createContext<SurveyContextType | undefined>(undefined);
 export function SurveyProvider({ children }: { children: ReactNode }) {
   const [state, dispatch] = useReducer(surveyReducer, initialState);
 
-  const API_BASE = process.env.NODE_ENV === 'production' ? '' : 'http://localhost:5000';
+  const API_BASE = process.env.NODE_ENV === 'production' ? '' : 'http://localhost:5001';
 
   const handleApiCall = async (apiCall: () => Promise<any>) => {
     dispatch({ type: 'SET_LOADING', payload: true });
